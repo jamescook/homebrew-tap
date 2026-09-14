@@ -7,6 +7,13 @@ class Gemba < Formula
   license all_of: ["MIT", "MPL-2.0"]
   head "https://github.com/jamescook/gemba.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/jamescook/homebrew-tap/releases/download/gemba-0.1.0"
+    rebuild 1
+    sha256 cellar: :any, arm64_tahoe:   "497e135e7873af3ae6cdff6793bed7df8cd645373a9aaaaedae26a247a080787"
+    sha256 cellar: :any, arm64_sequoia: "445e6a76c593ac78b7bfd408812966f8ded4c466dd334f4934b55f572aa3afc1"
+  end
+
   depends_on "cmake" => :build
   depends_on "crystal" => :build
   depends_on "pkgconf" => :build
