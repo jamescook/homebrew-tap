@@ -18,7 +18,8 @@ class Gemba < Formula
   depends_on "libpng"
   depends_on "libyaml"
   depends_on "libzip"
-  # Only built and tested on macOS so far.
+  # Only built and tested on macOS so far. Bottles are built for Apple
+  # Silicon on macOS 15 and later; Intel Macs build from source.
   depends_on :macos
   depends_on "openssl@3"
   depends_on "pcre2"
